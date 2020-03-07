@@ -5,7 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(JavaConfig.class);
-        Time bean = context.getBean(Time.class);
-        bean.printCurrentTime();
+        Time currentTimeBean = context.getBean(Time.class);
+        currentTimeBean.printCurrentTime();
     }
 }
